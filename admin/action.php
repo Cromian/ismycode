@@ -10,8 +10,6 @@ $content =
 fwrite($file , $content); 
 fclose($file);
 
-header('Location: ../index.php');
-
-
+header('Location: ../');
 
 ?>

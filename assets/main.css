@@ -1,0 +1,122 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class^="col_"], [class^="ban_"] {
+  float: left;
+  min-height: 1px;
+  box-sizing: border-box; }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 300px) {
+  .ban_1, .ban_2, .ban_3 {
+    width: 100%; }
+
+  .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+    width: 100%; } }
+@media only screen and (min-width: 600px) {
+  .col_12 {
+    width: 100%; }
+
+  .col_4 {
+    width: 33.33333%; }
+
+  .col_1, .col_2, .col_3, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11 {
+    width: 50%; } }
+@media (min-width: 600px) and (max-width: 900px) {
+  .col_1 ~ .col_4, .col_2 ~ .col_4, .col_3 ~ .col_4, .col_5 ~ .col_4, .col_6 ~ .col_4, .col_7 ~ .col_4, .col_8 ~ .col_4, .col_9 ~ .col_4, .col_10 ~ .col_4, .col_11 ~ .col_4 {
+    width: 50%; } }
+@media only screen and (min-width: 900px) {
+  .col_12 {
+    width: 100%; }
+
+  .col_11 {
+    width: 91.66667%; }
+
+  .col_10 {
+    width: 83.33333%; }
+
+  .col_9 {
+    width: 75%; }
+
+  .col_8 {
+    width: 66.66667%; }
+
+  .col_7 {
+    width: 58.33333%; }
+
+  .col_6 {
+    width: 50%; }
+
+  .col_5 {
+    width: 41.66667%; }
+
+  .col_4 {
+    width: 33.33333%; }
+
+  .col_3 {
+    width: 25%; }
+
+  .col_2 {
+    width: 16.66667%; }
+
+  .col_1 {
+    width: 8.33333%; } }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .col_12 {
+    width: 100%; }
+
+  .col_11 {
+    width: 91.66667%; }
+
+  .col_10 {
+    width: 83.33333%; }
+
+  .col_9 {
+    width: 75%; }
+
+  .col_8 {
+    width: 66.66667%; }
+
+  .col_7 {
+    width: 58.33333%; }
+
+  .col_6 {
+    width: 50%; }
+
+  .col_5 {
+    width: 41.66667%; }
+
+  .col_4 {
+    width: 33.33333%; }
+
+  .col_3 {
+    width: 25%; }
+
+  .col_2 {
+    width: 16.66667%; }
+
+  .col_1 {
+    width: 8.33333%; } }
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  text-align: center;
+  margin-top: 15vh;
+  font-family: 'Lora', serif; }
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 400; }
+
+.mood-txt {
+  font-size: 2.5em;
+  margin-top: 1em; }
+
+/*# sourceMappingURL=main.css.map */

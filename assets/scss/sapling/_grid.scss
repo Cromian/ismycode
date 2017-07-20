@@ -1,0 +1,192 @@
+// _grid.scss
+// TODO: Make the col_ relative in table for viriticle spacing
+
+
+@mixin grid-float {
+  float: left;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+
+.row {
+   &:before, &:after {
+    content:"";
+    display: table;
+    clear:both;
+   }
+}
+
+[class^="col_"], [class^="ban_"] {
+  @include grid-float;
+}
+
+ /* Extra Small Devices, Phones */
+ @media only screen and (min-width : $xsmall-break) {
+   .ban_1, .ban_2, .ban_3 {
+     width: $body-size;
+   }
+
+   .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+     width: $one-col * 12;
+   }
+ }
+
+ // Small Devices, Tablets
+ @media only screen and (min-width : $small-break) {
+   .col_12 {
+     width: $one-col * 12;
+   }
+
+   .col_4 {
+     width: $one-col * 4;
+   }
+
+   .col_1, .col_2, .col_3, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11 {
+     width: $one-col * 6;
+   }
+ }
+
+// Three col tablet hack
+ @media (min-width : $small-break) and (max-width : $medium-break) {
+   .col_1 ~ .col_4, .col_2 ~ .col_4, .col_3 ~ .col_4, .col_5 ~ .col_4, .col_6 ~ .col_4, .col_7 ~ .col_4, .col_8 ~ .col_4, .col_9 ~ .col_4, .col_10 ~ .col_4, .col_11 ~ .col_4 {
+     width: $one-col * 6;
+   }
+ }
+
+ // Medium Devices, Desktops
+ @media only screen and (min-width : $medium-break) {
+   .col_12 {
+     width: $one-col * 12;
+   }
+
+   .col_11 {
+     width: $one-col * 11;
+   }
+
+   .col_10 {
+     width: $one-col * 10;
+   }
+
+   .col_9 {
+     width: $one-col * 9;
+   }
+
+   .col_8 {
+     width: $one-col * 8;
+   }
+
+   .col_7 {
+     width: $one-col * 7;
+   }
+
+   .col_6 {
+     width: $one-col * 6;
+   }
+
+   .col_5 {
+     width: $one-col * 5;
+   }
+
+   .col_4 {
+     width: $one-col * 4;
+   }
+
+   .col_3 {
+     width: $one-col * 3;
+   }
+
+   .col_2 {
+     width: $one-col * 2;
+   }
+
+   .col_1 {
+     width: $one-col;
+   }
+ }
+
+ /* Large Devices, Wide Screens */
+ @media only screen and (min-width : $large-break) {
+  //  .ban_1, .ban_3 {
+  //    width: $body-size * .75;
+  //  }
+
+  //  .ban_2 {
+  //    width: $body-size * .25;
+  //  }
+
+   .col_12 {
+     width: $one-col * 12;
+   }
+
+   .col_11 {
+     width: $one-col * 11;
+   }
+
+   .col_10 {
+     width: $one-col * 10;
+   }
+
+   .col_9 {
+     width: $one-col * 9;
+   }
+
+   .col_8 {
+     width: $one-col * 8;
+   }
+
+   .col_7 {
+     width: $one-col * 7;
+   }
+
+   .col_6 {
+     width: $one-col * 6;
+   }
+
+   .col_5 {
+     width: $one-col * 5;
+   }
+
+   .col_4 {
+     width: $one-col * 4;
+   }
+
+   .col_3 {
+     width: $one-col * 3;
+   }
+
+   .col_2 {
+     width: $one-col * 2;
+   }
+
+   .col_1 {
+     width: $one-col;
+   }
+ }
+
+// @media only screen and (min-width : $xlarge-break) {
+//   // .ban_1 {
+//   //   width: $body-size;
+//   // }
+//
+//   // .wrapper {
+//   //     width: $xlarge-break;
+//   //     margin: auto;
+//   //   }
+//
+//   // .ban_2 {
+//   //   width: $body-size * .25;
+//   // }
+//   //
+//   // // If 3 bans are needed
+//   // .ban_2, .ban_3 {
+//   //   width: $body-size * .125;
+//   // }
+//
+// }
+//
+// // @media only screen and (min-width : $xlarge-break + 1) {
+// //   .wrapper {
+// //     width: $xlarge-break;
+// //     margin: auto;
+// //   }
+// // }

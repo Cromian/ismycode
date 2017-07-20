@@ -1,0 +1,28 @@
+// main.scss
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+@import "sapling/sapling.scss";
+@import "dali/dali.scss";
+
+@import '_colors.scss';
+@import "_mixins.scss";
+@import "_hacks.scss";
+
+
+body {
+    text-align: center;
+    margin-top: 15vh;
+    font-family: 'Lora', serif;
+}
+
+h1{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+
+}
+
+.mood-txt {
+    font-size: 2.5em;
+    margin-top: 1em;
+}

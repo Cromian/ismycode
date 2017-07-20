@@ -19,12 +19,6 @@
 
         <?php include('logic.php') ?>
 
-        
-        <!-- <h1>Is my code working today?</h1>
-
-        <div id="yes" class="mood-txt"><i class="em em-smile"></i></br>Yes!</div>
-        
-        <div id="no" class="mood-txt"><i class="em em-angry"></i></br>No!</div> -->
       </div>
     </div>
 

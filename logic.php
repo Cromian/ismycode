@@ -1,13 +1,12 @@
 <?php
 
 // Show text function.
-function showText($emojie_code, $status_txt) {
+function showText($emojie_code, $status_txt, $css_class) {
 
-    print '<h1>Is my code working today?</h1>';
-
-    print '<div class="mood-txt">
+    print '<div class="' . $css_class . '">
+            <h1>Is my code working today?</h1>
             <i class="em ' . $emojie_code . '"></i></br>
-            ' . $status_txt . '
+            <span class="sat-txt">' . $status_txt . '</span>
           </div>';
 
 }
@@ -22,7 +21,8 @@ if ($status == "yes")
 {
     showText(
         $emojie_code = 'em-smile',
-        $status_txt = 'Yes'  
+        $status_txt = 'Yes',
+        $css_class = 'yes' 
     );
 }
 
@@ -30,7 +30,8 @@ if ($status == "no")
 {
     showText(
         $emojie_code = 'em-angry',
-        $status_txt = 'No' 
+        $status_txt = 'No',
+        $css_class = 'no'
     );
 
 }
@@ -39,7 +40,8 @@ if ($status == "sorta")
 {
     showText(
         $emojie_code = 'em-confused',
-        $status_txt = 'Sorta' 
+        $status_txt = 'Sorta',
+        $css_class = 'sorta'
     );
 
 }

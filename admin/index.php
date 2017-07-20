@@ -6,7 +6,7 @@
     <option value="no">No</option>
     <option value="sorta">Sorta</option>
   </select>
-  <input type="submit">
+  <input type="submit">""
 </form>
 
 

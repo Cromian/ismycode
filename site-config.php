@@ -3,7 +3,7 @@
 include_once('router.php');
 
 //Site Title & Meta
-$site_title = "Is my Code Working Today";
+$site_title = "Is My Code Working Today";
 $site_description = "The current state of the code.";
 $site_keywords = '';
 

@@ -7,19 +7,19 @@ $(document).ready(function() {
 	    return false;
 	});
 
-	$var = "yes";
+	// $var = "yes";
 	
-	if ($var == "yes") {
-		$('#no').hide();
-		$("body").css("background-color", "#7ce288");
+	// if ($var == "yes") {
+	// 	$('#no').hide();
+	// 	$("body").css("background-color", "#7ce288");
 
-	} 
+	// } 
 
-	if ($var == "no") {
-		$('#yes').hide();
-		$("body").css("background-color", "#ed0f0f");
+	// if ($var == "no") {
+	// 	$('#yes').hide();
+	// 	$("body").css("background-color", "#ed0f0f");
 
-	} 
+	// } 
 
 
 	
